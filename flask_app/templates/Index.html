@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>COVID-19 statistics</title>
+{% endblock %}
+
+{% block body %}
+<div class='head'><h1> Current situation</h1></div>
+	<div class='big'><h2 class='one'> Country:  {{ query.country}}</h2></div>
+	<div class='small'><h2> Active cases: {{ query.active_cases }}</h2></div>
+	<div class='big'><h2 class='one'> Total Recovered: {{ query.total_recovered }}</h2></div>
+	<div class='small'><h2> New cases: {{ query.new_cases }}</h2></div>
+	<div class='big'><h2 class='one'> Total cases: {{ query.total_cases }}</h2></div>
+	<div class='small'><h2> Total deaths: {{ query.total_deaths }} </h2></div>
+	<div class='big'><h2 class='one'> Critical cases :{{ query.critical }} </h2></div>
+	<div class='small'><h2> New deaths: {{ query.new_deaths }} </h2></div>
+	<div class='big'><h2 class='one'> Cases per 1 Million: {{ query.cases_per_1M }} </h2></div>
+	<div class='small'><h2> Date: {{ query.somoy }}</h2></div>
+{% endblock %}
